@@ -5,6 +5,7 @@ body {
   .header {
     display: flex;
     justify-content: space-between;
+    background-color: lightgray;
   }
   
   .header ul {
@@ -32,7 +33,8 @@ body {
   }
   
   .header img {
-    margin-left: 40px;
+    width: 60px;
+    margin: 12px 20px 0 20px;
   }
   
   .register,
@@ -42,7 +44,7 @@ body {
     height: calc(100% - 70px);
       display: flex;
       justify-content: center;
-      margin-top: 80px;
+      margin-top: 0px;
       /* padding-bottom: 40px; */
       /* outline: red solid 2px; */
   }
@@ -50,7 +52,8 @@ body {
   .frm_wrap {
     width: 100%;
     display: flex;
-    align-items: center;
+    margin-top: 3%;
+    /* align-items: center; */
     justify-content: center;
     /* outline: blue solid 2px; */
   }
@@ -82,13 +85,18 @@ body {
     width: 90px;
     height: 25px;
   }
+
+  #link_register {
+    width:60%;
+    /* outline: green solid 2px; */
+  }
   
   .reg_wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
-    outline: red solid 2px;
+    /* outline: red solid 2px; */
   }
   .credentials,
   .notes {
@@ -165,3 +173,27 @@ body {
     background: darkgray;
   }
 
+  #side_menu {
+    width: 250px;
+    height: 100%;
+    margin-top: 12px;
+    margin-left: 12px;
+    padding: 40px 0 0 20px;
+    background-color: lightgray;
+    outline: red solid 2px;
+  }
+
+  #side_menu ul {
+    list-style-type: none;
+  }
+
+  #side_menu li {
+    padding: 12px;
+  }
+  
+  #side_menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+  }

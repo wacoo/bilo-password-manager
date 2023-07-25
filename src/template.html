@@ -7,11 +7,21 @@
 </head>
 <body>
     <header class="header">
-        <a href="" class="logo"><img src="" alt="Logo"></a>
+        <a href="" id="burger"><img src="imgs/burger.png" alt="Menu" width="100px"></a>
+        <a href="" id="logo"><img src="imgs/b-logo.png" alt="Logo" width="100px"></a>
     </header>
+    <dialog id="side_menu">
+        <ul>
+            <li><a href="#">Credentials</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Both</a></li>
+        </ul>
+        <span>&times</span>
+    </dialog>
     <section class="register">
         <div class="frm_wrap">
-            <h1>User registration</h1>
+            <div class="reg_wrap">
+                <h1>User registration</h1>
             <form action="" id="frm_register">
                 <input type="text" id="fname" name="fname" maxlength='50' placeholder="First name">
                 <br><br>
@@ -28,6 +38,7 @@
                 </div>
                 <small class="info_register"></small>
             </form>
+            </div>            
         </div>
         
     </section>
