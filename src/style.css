@@ -178,22 +178,41 @@ body {
     height: 100%;
     margin-top: 12px;
     margin-left: 12px;
-    padding: 40px 0 0 20px;
+    padding: 20px 0 0 20px;
     background-color: lightgray;
-    outline: red solid 2px;
+
+    font-size: 20px;
+    font-family: sans-serif;
+    color: gray;
+    /* outline: red solid 2px; */
   }
 
   #side_menu ul {
+    width: calc(100% - 20px);
+    margin-top: 50px;
+    margin-right: 24px;
+    padding: 0;
+    align-items: center;
     list-style-type: none;
+    border-bottom: gray solid 2px;
+    text-align: left;
+    /* outline: blue solid 2px; */
   }
 
   #side_menu li {
+    width: calc(100% - 24px);
     padding: 12px;
+    /* outline: red solid 2px;  */
   }
   
   #side_menu a {
     text-decoration: none;
     color: #000;
     font-size: 20px;
+    font-weight: 600;
+  }
+
+  #side_menu span {
+    font-size: 30px;
     font-weight: 600;
   }

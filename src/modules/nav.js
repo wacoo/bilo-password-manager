@@ -6,6 +6,7 @@ const linkToRegister = document.getElementById('link_register');
 const frmRegister = document.getElementById('frm_register');
 const frmLogin = document.getElementById('frm_login');
 const burger = document.getElementById('burger');
+const close = document.querySelector('close');
 const modalSideMenu = document.getElementById('side_menu');
 
 export class Navigation {
@@ -56,5 +57,13 @@ export class Navigation {
             event.preventDefault();
             modalSideMenu.show();
         });
+    }
+
+    addModalCloseListener() {
+        close.addEventListener('click', (event) => {
+            event.preventDefault();
+            modalSideMenu.close();
+        });
+        
     }
 }
